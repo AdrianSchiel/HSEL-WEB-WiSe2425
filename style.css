@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +9,7 @@
   }
   
   /* HEADINGS */
-  
-  h1, p {
-    color: #fff;
-    text-align: center;
-    line-height: 1.4;
-  }
-  
+    
   h1 {
     font-size: 2.2rem;
   }
@@ -90,15 +87,46 @@
     flex-direction: column;
     justify-content: center;
   }
-
+ 
   .headline h1 {
     margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.4;
     font-weight: 600;
     font-size: 3rem;
   }
-  .headline p {
+  .headline p {    
+    color: #fff;
+    text-align: center;
+    line-height: 1.4;
     font-size: 1.4rem;
-  }    
+  } 
+
+  .about-us {
+    width: 100%;
+    height: auto;
+    padding: 25px 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .about-us h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: 'Roboto',Arial,sans-serif;
+  }
+
+  .about-us p {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+
   /* MOBILE MENU & ANIMATION */
   
   .menu-toggle .bar{
@@ -144,10 +172,34 @@
     /* Mobile Devices - Phones/Tablets */
   
   @media only screen and (max-width: 720px) { 
-    .features {
-      flex-direction: column;
-      padding: 50px;
-    }
+    .about-us {
+        width: 100%;
+        height: auto;
+        padding: 20px 10%; /* Verringerter Padding für schmalere Bildschirme */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Flexrichtung geändert für einspaltiges Layout */
+      }
+      .about-us h1 {
+        text-transform: uppercase;
+        margin-bottom: 15px; /* Geringerer Abstand unten */
+        font-weight: 600;
+        font-size: 1.5rem; /* Kleinere Schriftgröße für Überschrift */
+        font-family: 'Roboto', Arial, sans-serif;
+        text-align: center; /* Zentriert die Überschrift für bessere Lesbarkeit */
+      }
+    
+      .about-us p {
+        padding-top: 10px;
+        font-size: 1rem; /* Kleinere Schriftgröße für Absatz */
+        line-height: 1.5;
+      }
+
+      .about-us img {
+        width: 75%;
+        padding-top: 20px;
+      }
     
     /* MOBILE HEADINGS */
 
