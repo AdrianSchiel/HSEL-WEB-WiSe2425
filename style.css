@@ -34,7 +34,7 @@ html {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    background-color: #161616;
+    background-color: #fff6d1;
   }
 
   /* NAVIGATION */
@@ -60,7 +60,7 @@ html {
     justify-self: end;
   }
   .nav-item a {
-    color: #fff;
+    color: #000;
     padding: 15px;
     font-size: 1.2rem;
     font-weight: 400;
@@ -71,7 +71,7 @@ html {
   }
   
   .nav-item a:hover {
-    color: #3498db;
+    color: #df684d;
   }
   
   /* SECTIONS */
@@ -125,7 +125,42 @@ html {
     font-size: 1.2rem;
     line-height: 1.6;
   }
+ 
+  .games{
+    background-color: #80b878;
+    color: #fff;
+  }
 
+  .game {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 25px 20%;
+  }
+
+  .game:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .game img{
+    width: 90%;
+    border-radius: 15px;
+  }
+  .game h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: 'Roboto',Arial,sans-serif;
+  }
+
+  .game p {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
 
   /* MOBILE MENU & ANIMATION */
   
@@ -172,27 +207,46 @@ html {
     /* Mobile Devices - Phones/Tablets */
   
   @media only screen and (max-width: 720px) { 
+    .game, .game:nth-child(odd){
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+
+    .game img {
+        width: 100%;
+    }
+
+    .game h1 {
+        font-size: 1.5rem;
+    }
+
+    .game p {
+        font-size: 1rem;
+    }
+
     .about-us {
         width: 100%;
         height: auto;
-        padding: 20px 10%; /* Verringerter Padding für schmalere Bildschirme */
+        padding: 20px 10%; 
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; /* Flexrichtung geändert für einspaltiges Layout */
-      }
+        flex-direction: column;
+    }
       .about-us h1 {
         text-transform: uppercase;
-        margin-bottom: 15px; /* Geringerer Abstand unten */
+        margin-bottom: 15px;
         font-weight: 600;
-        font-size: 1.5rem; /* Kleinere Schriftgröße für Überschrift */
+        font-size: 1.5rem;
         font-family: 'Roboto', Arial, sans-serif;
-        text-align: center; /* Zentriert die Überschrift für bessere Lesbarkeit */
+        text-align: center;
       }
     
       .about-us p {
         padding-top: 10px;
-        font-size: 1rem; /* Kleinere Schriftgröße für Absatz */
+        font-size: 1rem;
         line-height: 1.5;
       }
 
