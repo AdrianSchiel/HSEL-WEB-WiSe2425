@@ -81,7 +81,7 @@ html {
     height: 85vh;
     min-height: 350px;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)),
-     url('assets/heading.png') fixed;
+     url('assets/heading.webp') fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
