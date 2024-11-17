@@ -167,7 +167,7 @@ html {
   .menu-toggle .bar{
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: #000;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -286,9 +286,9 @@ html {
       position: fixed;
       justify-content: start;
       top: 50px;
-      background-color: #313131;
+      background-color: #fff6d1;
       width: 100%;
-      height: calc(100vh - 55px);
+      height: 100vh;
       transform: translate(-101%);
       text-align: center;
       overflow: hidden;
