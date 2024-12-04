@@ -396,7 +396,7 @@ gc-team:hover {
   }
 
   .footer .row .footer-gameover{
-    font-family: 'Pixelify';
+    font-family: 'Pixelify', Arial, sans-serif;
     text-transform: uppercase;
     font-size: 5rem;
     font-weight: 300;
@@ -408,10 +408,7 @@ gc-team:hover {
       padding:5%;
     }
     .footer .row .footer-gameover{
-      font-family: 'Pixelify';
-      text-transform: uppercase;
       font-size: 2.4rem;
-      font-weight: 300;
     }
     .footer .row ul li{
       display:block;
