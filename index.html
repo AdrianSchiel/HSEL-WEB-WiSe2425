@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -71,77 +70,60 @@
       </section>
 
       <section class="games" id="games">
-        <div class="game">
-          <img src="assets/games/adventure.webp" alt="" />
-          <div class="game-info">
-            <h1>Adventure Game</h1>
-            <p>
-              Ein klassisches Abenteuer im Comic-Stil, das dich in eine Welt
-              voller Geheimnisse und Rätsel entführt. Begleite unsere Heldin auf
-              ihrer Reise durch die Wälder und Berge und hilf
-            </p>
-          </div>
-        </div>
-        <div class="game">
-            <img src="assets/games/cooking.webp" alt="" />
-            <div class="game-info">
-              <h1>Adventure Game</h1>
-              <p>
-                Ein klassisches Abenteuer im Comic-Stil, das dich in eine Welt
-                voller Geheimnisse und Rätsel entführt. Begleite unsere Heldin auf
-                ihrer Reise durch die Wälder und Berge und hilf
-              </p>
-            </div>
-          </div>
-          <div class="game">
-            <img src="assets/games/tower_defence.webp" alt="" />
-            <div class="game-info">
-              <h1>Adventure Game</h1>
-              <p>
-                Ein klassisches Abenteuer im Comic-Stil, das dich in eine Welt
-                voller Geheimnisse und Rätsel entführt. Begleite unsere Heldin auf
-                ihrer Reise durch die Wälder und Berge und hilf
-              </p>
-            </div>
-          </div>
+        <gc-game
+          image="assets/games/adventure.webp"
+          title="Adventure Game"
+          description="Ein klassisches Abenteuer im Comic-Stil, das dich in eine Welt
+          voller Geheimnisse und Rätsel entführt. Begleite unsere Heldin auf
+          ihrer Reise durch die Wälder und Berge und hilf"></gc-game>
+
+        <gc-game
+          image="assets/games/tower_defence.webp"
+          title="Tower Defence"
+          description="Ein kulinarisches Abenteuer, bei dem du in die Rolle eines jungen Kochs schlüpfst und die Geheimnisse der Küche entdeckst. Bereite köstliche Gerichte zu, lerne neue Rezepte und werde zum Meisterkoch!"></gc-game>
+        <gc-game
+          image="assets/games/cooking.webp"
+          title="Cooking Game"
+          description="Ein kulinarisches Abenteuer, bei dem du in die Rolle eines jungen Kochs schlüpfst und die Geheimnisse der Küche entdeckst. Bereite köstliche Gerichte zu, lerne neue Rezepte und werde zum Meisterkoch!"></gc-game>
       </section>
       <section class="team-container" id="team">
         <h1>Unser Team</h1>
         <div class="team-grid">
-            <div class="team-member">
-                <div class="avatar"> <img src="assets/team/Ilya.webp" alt=""></div>
-                <h2>Ilya</h2>
-                <p>Creative Director</p>
-            </div>
-            <div class="team-member">
-                <div class="avatar"> <img src="assets/team/Jessica.webp" alt=""></div>
-                <h2>Jessica</h2>
-                <p>Pixel Artist</p>
-            </div>
-            <div class="team-member">
-                <div class="avatar"><img src="assets/team/Lea.webp" alt=""></div>
-                <h2>Lea</h2>
-                <p>Level Designerin</p>
-            </div>
-            <div class="team-member">
-              <div class="avatar"><img src="assets/team/Leonard.webp" alt=""></div>
-              <h2>Leonard</h2>
-              <p>Programmierer</p>
+          <div class="team-member">
+            <div class="avatar"> <img src="assets/team/Ilya.webp" alt></div>
+            <h2>Ilya</h2>
+            <p>Creative Director</p>
           </div>
           <div class="team-member">
-            <div class="avatar"><img src="assets/team/Rabid.webp" alt=""></div>
+            <div class="avatar"> <img src="assets/team/Jessica.webp" alt></div>
+            <h2>Jessica</h2>
+            <p>Pixel Artist</p>
+          </div>
+          <div class="team-member">
+            <div class="avatar"><img src="assets/team/Lea.webp" alt></div>
+            <h2>Lea</h2>
+            <p>Level Designerin</p>
+          </div>
+          <div class="team-member">
+            <div class="avatar"><img src="assets/team/Leonard.webp" alt></div>
+            <h2>Leonard</h2>
+            <p>Programmierer</p>
+          </div>
+          <div class="team-member">
+            <div class="avatar"><img src="assets/team/Rabid.webp" alt></div>
             <h2>Rabid</h2>
             <p>Sound Designer</p>
-        </div>
-        <div class="team-member">
-          <div class="avatar"><img src="assets/team/Roman.webp" alt=""></div>
-          <h2>Roman</h2>
-          <p>Game Tester</p>
-      </div>
+          </div>
+          <div class="team-member">
+            <div class="avatar"><img src="assets/team/Roman.webp" alt></div>
+            <h2>Roman</h2>
+            <p>Game Tester</p>
+          </div>
         </section>
-    </div>
+      </div>
     </div>
 
+    <script src="components/gc-game.js" type="module"></script>
     <script src="app.js"></script>
   </body>
 </html>
