@@ -18,9 +18,21 @@ class GCTeam extends HTMLElement {
     }
 
     updateContent() {
-        const imgsrc = this.getAttribute("image");
-        const job = this.getAttribute("job");
-        const name = this.getAttribute("name");
+        var imgsrc = this.getAttribute("image");
+        var job = this.getAttribute("job");
+        var name = this.getAttribute("name");
+
+        if(imgsrc === null){
+            imgsrc = "assets/team/default.png";
+        }
+
+        if(job === null) {
+            job = "Arbeitslos";
+        }
+
+        if(name === null) {
+            name = "Max Musterman";
+        }
 
         const styles = `
             .avatar {
