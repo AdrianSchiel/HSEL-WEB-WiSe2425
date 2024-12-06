@@ -37,23 +37,19 @@ h2 {
   width: 100%;
   height: auto;
 }
+/* NAVIGATION */
 
-.nav-wrapper {
+.navbar {
   width: 100%;
+  height: 50px;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
   background-color: #fff6d1;
   z-index: 10000;
-}
-
-/* NAVIGATION */
-
-.navbar {
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
-  height: 50px;
   overflow: hidden;
 }
 
@@ -359,8 +355,6 @@ gc-team:hover {
   }
 }
 
-
-
 .footer{
   background:#df684d;
   font-family: 'Play', sans-serif;
@@ -373,8 +367,8 @@ gc-team:hover {
 
   .footer .row{
   width:100%;
-  margin:1% 0%;
-  padding:0.6% 0%;
+  margin:1% 0;
+  padding:0.6% 0;
   color:#fff;
   font-size:0.8em;
   }
@@ -400,7 +394,7 @@ gc-team:hover {
   
   .footer .row a i{
     font-size:2em;
-    margin:0% 1%;
+    margin:0 1%;
   }
 
   .footer .row .footer-gameover{
@@ -424,6 +418,6 @@ gc-team:hover {
       text-align:left;
     }
     .footer .row a i{
-      margin:0% 3%;
+      margin:0 3%;
     }
   } 
