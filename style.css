@@ -2,6 +2,10 @@
   font-family: 'Pixelify';
   src: URL('assets/fonts/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Roboto';
+  src: URL('assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
 
 html {
   scroll-behavior: smooth;
