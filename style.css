@@ -179,10 +179,14 @@ gc-game:nth-child(odd) {
 }
 
 .team-container {
-  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 5% 0 0 0;
+}
+
+.team-container h1{
+  justify-content: center;
+  display: flex;
 }
 
 .team-grid {
