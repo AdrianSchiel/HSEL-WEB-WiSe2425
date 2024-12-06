@@ -131,7 +131,7 @@ h2 {
 .about-us {
   width: 100%;
   height: auto;
-  padding: 25px 20%;
+  padding: 5% 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,6 +159,13 @@ h2 {
 .games {
   background-color: #80b878;
   color: #fff;
+  padding-top: 3%;
+}
+.games h1{
+  justify-content: center;
+  display: flex;
+  margin-bottom: 1%;
+  text-transform: uppercase;
 }
 
 gc-game {
@@ -183,6 +190,8 @@ gc-game:nth-child(odd) {
 .team-container h1{
   justify-content: center;
   display: flex;
+  margin-bottom: 1%;
+  text-transform: uppercase;
 }
 
 .team-grid {
