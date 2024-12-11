@@ -1,0 +1,17 @@
+[
+    {
+        "image": "assets/games/adventure.webp",
+        "title": "Adventure Game",
+        "description": "Ein klassisches Abenteuer im Comic-Stil, das dich in eine Welt voller Geheimnisse und Rätsel entführt. Begleite unsere Heldin auf ihrer Reise durch die Wälder und Berge und hilf."
+    },
+    {
+        "image": "assets/games/tower_defence.webp",
+        "title": "Tower Defence",
+        "description": "Ein kulinarisches Abenteuer, bei dem du in die Rolle eines jungen Kochs schlüpfst und die Geheimnisse der Küche entdeckst. Bereite köstliche Gerichte zu, lerne neue Rezepte und werde zum Meisterkoch!"
+    },
+    {
+        "image": "assets/games/cooking.webp",
+        "title": "Cooking Game",
+        "description": "Ein kulinarisches Abenteuer, bei dem du in die Rolle eines jungen Kochs schlüpfst und die Geheimnisse der Küche entdeckst. Bereite köstliche Gerichte zu, lerne neue Rezepte und werde zum Meisterkoch!"
+    }
+]

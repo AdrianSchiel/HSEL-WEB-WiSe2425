@@ -1,0 +1,32 @@
+[
+    {
+        "image": "assets/team/Ilya.webp",
+        "name": "Ilya",
+        "job": "Creative Director"
+    },
+    {
+        "image": "assets/team/Jessica.webp",
+        "name": "Jessica",
+        "job": "Pixel Artist"
+    },
+    {
+        "image": "assets/team/Lea.webp",
+        "name": "Lea",
+        "job": "Level Designerin"
+    },
+    {
+        "image": "assets/team/Leonard.webp",
+        "name": "Leonard",
+        "job": "Programmierer"
+    },
+    {
+        "image": "assets/team/Rabid.webp",
+        "name": "Rabid",
+        "job": "Sound Designer"
+    },
+    {
+        "image": "assets/team/Roman.webp",
+        "name": "Roman",
+        "job": "Game Tester"
+    }
+]
