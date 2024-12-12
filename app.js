@@ -3,6 +3,26 @@ document.querySelector(".menu-toggle").addEventListener("click", function() {
     this.classList.toggle("is-active");
 });
 
+const closeMobileNav = () => {
+    const nav = document.querySelector(".nav");
+    const menuToggle = document.querySelector(".menu-toggle");
+    if (nav.classList.contains("mobile-nav")) {
+        nav.classList.remove("mobile-nav");
+        menuToggle.classList.remove("is-active");
+    }
+}
+
+window.addEventListener("scroll", function() {
+    closeMobileNav();
+});
+
+document.querySelectorAll(".nav-item a").forEach(item => {
+    item.addEventListener("click", function() {
+        closeMobileNav();
+    });
+});
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const teamContainer = document.getElementById("team-member");
     const gamesContainer = document.getElementById("games");
