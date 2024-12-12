@@ -61,17 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     };
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                loadTeamData();
-                observer.unobserve(teamContainer);
-                loadGamesData();
-                observer.unobserve(gamesContainer);
-            }
-        });
-    });
-
-    observer.observe(teamContainer);
-    observer.observe(gamesContainer);
+    loadGamesData();
+    loadTeamData();
 });

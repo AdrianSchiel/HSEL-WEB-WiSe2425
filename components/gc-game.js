@@ -59,7 +59,7 @@ class GCGame extends HTMLElement {
     `;
 
     const template = `
-          <img src="${imgsrc}" alt="" />
+          <img part="game-img" src="${imgsrc}" alt="" />
           <div class="game-info">
               <h1>${title}</h1>
               <p>${description}</p>
