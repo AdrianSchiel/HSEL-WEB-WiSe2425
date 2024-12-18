@@ -24,31 +24,46 @@ document.querySelectorAll(".nav-item a").forEach(item => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const teamContainer = document.getElementById("team-member");
     const gamesContainer = document.getElementById("games");
 
+    const renderTeamData = (teamData) => {
+        const teamContainer = document.getElementById("team-member");
+    
+        teamData.forEach(member => {
+            const teamElement = document.createElement("gc-team");
+            teamElement.setAttribute("image", member.image);
+            teamElement.setAttribute("name", member.name);
+            teamElement.setAttribute("job", member.job);
+    
+            teamContainer.appendChild(teamElement);
+        });
+    };
+
     const loadTeamData = () => {
-        fetch("assets/team/team.json")
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP-Fehler! Status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(teamData => {
-                teamData.forEach(member => {
-                    const teamElement = document.createElement("gc-team");
-                    teamElement.setAttribute("image", member.image);
-                    teamElement.setAttribute("name", member.name);
-                    teamElement.setAttribute("job", member.job);
 
-                    teamContainer.appendChild(teamElement);
+        const storedData = localStorage.getItem("teamData");
+        if (storedData) {
+            console.log("Daten aus dem LocalStorage geladen.");
+            const teamData = JSON.parse(storedData);
+            renderTeamData(teamData);
+        } else {
+            fetch("assets/team/team.json")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP-Fehler! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(teamData => {
+                    localStorage.setItem("teamData", JSON.stringify(teamData));
+                    console.log("Daten wurden in LocalStorage gespeichert.");
+    
+                    renderTeamData(teamData);
+                })
+                .catch(error => {
+                    console.error("Fehler beim Laden der Teamdaten:", error);
                 });
-
-            })
-            .catch(error => {
-                console.error("Fehler beim Laden der Teamdaten:", error);
-            });
+        }
     };
 
     const loadGamesData = () => {
