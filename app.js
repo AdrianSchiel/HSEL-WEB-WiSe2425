@@ -24,8 +24,6 @@ document.querySelectorAll(".nav-item a").forEach(item => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const gamesContainer = document.getElementById("games");
-
     const renderTeamData = (teamData) => {
         const teamContainer = document.getElementById("team-member");
     
@@ -36,6 +34,19 @@ document.addEventListener("DOMContentLoaded", () => {
             teamElement.setAttribute("job", member.job);
     
             teamContainer.appendChild(teamElement);
+        });
+    };
+
+    const renderGamesData = (gameData) => {
+        const gamesContainer = document.getElementById("games");
+
+        gameData.forEach(game => {
+            const gameElement = document.createElement("gc-game");
+            gameElement.setAttribute("image", game.image);
+            gameElement.setAttribute("title", game.title);
+            gameElement.setAttribute("description", game.description);
+
+            gamesContainer.appendChild(gameElement);
         });
     };
 
@@ -67,27 +78,30 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const loadGamesData = () => {
-        fetch("assets/games/games.json")
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP-Fehler! Status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(gamesData => {
-                gamesData.forEach(game => {
-                    const gameElement = document.createElement("gc-game");
-                    gameElement.setAttribute("image", game.image);
-                    gameElement.setAttribute("title", game.title);
-                    gameElement.setAttribute("description", game.description);
 
-                    gamesContainer.appendChild(gameElement);
+        const storedData = localStorage.getItem("gamesData");
+        if (storedData) {
+            console.log("Daten aus dem LocalStorage geladen.");
+            const gamesData = JSON.parse(storedData);
+            renderGamesData(gamesData);
+        } else {
+            fetch("assets/games/games.json")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP-Fehler! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(gamesData => {
+                    localStorage.setItem("gamesData", JSON.stringify(gamesData));
+                    console.log("Daten wurden in LocalStorage gespeichert.");
+        
+                    renderGamesData(gamesData);
+                })
+                .catch(error => {
+                    console.error("Fehler beim Laden der Spieledaten:", error);
                 });
-
-            })
-            .catch(error => {
-                console.error("Fehler beim Laden der Spieledaten:", error);
-            });
+        }
     };
 
     loadGamesData();
