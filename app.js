@@ -28,8 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const gamesContainer = document.getElementById("games");
 
     const loadTeamData = () => {
-        if (teamContainer.getAttribute("data-loaded") === "true") return;
-
         fetch("assets/team/team.json")
             .then(response => {
                 if (!response.ok) {
@@ -47,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     teamContainer.appendChild(teamElement);
                 });
 
-                teamContainer.setAttribute("data-loaded", "true");
             })
             .catch(error => {
                 console.error("Fehler beim Laden der Teamdaten:", error);
@@ -55,8 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const loadGamesData = () => {
-        if (gamesContainer.getAttribute("data-loaded") === "true") return;
-
         fetch("assets/games/games.json")
             .then(response => {
                 if (!response.ok) {
@@ -74,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     gamesContainer.appendChild(gameElement);
                 });
 
-                gamesContainer.setAttribute("data-loaded", "true");
             })
             .catch(error => {
                 console.error("Fehler beim Laden der Spieledaten:", error);
