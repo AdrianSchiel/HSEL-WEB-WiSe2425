@@ -176,15 +176,12 @@ h2 {
 
 gc-game {
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
   flex-direction: row;
   width: 100%;
   height: auto;
   padding: 25px 20%;
-}
-
-gc-game:nth-child(odd) {
-  flex-direction: row-reverse;
 }
 
 .team-container {

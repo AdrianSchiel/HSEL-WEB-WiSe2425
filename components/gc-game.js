@@ -24,24 +24,24 @@ class GCGame extends HTMLElement {
 
     const styles = `
           img{
-           width: 100%;
-    height: auto; /* Beibehaltung des Seitenverhältnisses */
-    border-radius: 15px;
-    object-fit: cover; /* Alternative: 'contain', falls Ränder erlaubt sind */
-    display: block;
+            width: 100%;
+            height: auto; /* Beibehaltung des Seitenverhältnisses */
+            border-radius: 15px;
+            object-fit: cover; /* Alternative: 'contain', falls Ränder erlaubt sind */
+            display: block;
           }
           h1 {
-                text-transform: uppercase;
-                margin-bottom: 20px;
-                font-weight: 600;
-                font-size: 2rem;
-                font-family: 'Roboto',Arial,sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 2rem;
+            font-family: 'Roboto',Arial,sans-serif;
           }
 
           p {
-                padding-top: 10px;
-                font-size: 1.2rem;
-                line-height: 1.6;
+            padding-top: 10px;
+            font-size: 1.2rem;
+            line-height: 1.6;
           }
           @media only screen and (max-width: 1160px) {
             img {
