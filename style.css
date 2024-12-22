@@ -98,26 +98,34 @@ h2 {
   justify-content: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .headline {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-      url('assets/heading-1280.webp'); /* 640x360 */
+      url('assets/heading-640.webp'); /* 640x360 */
   }
 }
 
-@media (min-width: 601px) and (max-width: 1200px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   .headline {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-      url('assets/heading-2560.webp'); /* 1920x1080 */
+      url('assets/heading-1280.webp'); /* 1280x720 */
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .headline {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+      url('assets/heading-1920.webp'); /* 1920x1080 */
+  }
+}
+
+@media (min-width: 1921px) {
   .headline {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
       url('assets/heading-3840.webp'); /* 3840x2160 */
   }
 }
+
 
 .headline h1 {
   margin-bottom: 20px;
