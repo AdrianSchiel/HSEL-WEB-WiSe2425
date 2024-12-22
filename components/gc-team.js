@@ -59,7 +59,7 @@ class GCTeam extends HTMLElement {
       `;
 
         const template = `
-            <div class="avatar"> <img src="${imgsrc}" alt></div>
+            <div class="avatar"> <img src="${imgsrc}" alt="Team-Avatar"></div>
             <h2>${name}</h2>
             <p>${job}</p>
       `;
