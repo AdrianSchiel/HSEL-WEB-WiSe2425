@@ -59,7 +59,17 @@ class GCGame extends HTMLElement {
     `;
 
     const template = `
-          <img part="game-img" src="${imgsrc}" alt="Game-Thumbnail" />
+          <img part="game-img"   
+            src="${imgsrc}_1050.webp" 
+            srcset="
+              ${imgsrc}_768.webp 768w,
+              ${imgsrc}_1050.webp 1050w,
+              ${imgsrc}_1400.webp 1400w,
+              ${imgsrc}_2100.webp 2100w,
+              ${imgsrc}_2800.webp 2800w
+            " 
+            sizes="(max-width: 768px) 768px, (max-width: 1400px) 1050px, 100vw" 
+            alt="Game-Thumbnail" />
           <div class="game-info">
               <h1>${title}</h1>
               <p>${description}</p>
