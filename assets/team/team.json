@@ -1,31 +1,31 @@
 [
     {
-        "image": "assets/team/Ilya.webp",
+        "image": "assets/team/Ilya/Ilya",
         "name": "Ilya",
         "job": "Creative Director"
     },
     {
-        "image": "assets/team/Jessica.webp",
+        "image": "assets/team/Jessica/Jessica",
         "name": "Jessica",
         "job": "Pixel Artist"
     },
     {
-        "image": "assets/team/Lea.webp",
+        "image": "assets/team/Lea/Lea",
         "name": "Lea",
         "job": "Level Designerin"
     },
     {
-        "image": "assets/team/Leonard.webp",
+        "image": "assets/team/Leonard/Leonard",
         "name": "Leonard",
         "job": "Programmierer"
     },
     {
-        "image": "assets/team/Rabid.webp",
+        "image": "assets/team/Rabid/Rabid",
         "name": "Rabid",
         "job": "Sound Designer"
     },
     {
-        "image": "assets/team/Roman.webp",
+        "image": "assets/team/Roman/Roman",
         "name": "Roman",
         "job": "Game Tester"
     }

@@ -59,7 +59,17 @@ class GCTeam extends HTMLElement {
       `;
 
         const template = `
-            <div class="avatar"> <img src="${imgsrc}" alt="Team-Avatar"></div>
+            <div class="avatar"> 
+                <img   
+                    src="${imgsrc}_200.webp" 
+                    srcset="
+                        ${imgsrc}_200.webp 200w,
+                        ${imgsrc}_400.webp 400w,
+                        ${imgsrc}_600.webp 600w
+                    " 
+                    sizes="(max-width: 400px) 100px, (max-width: 800px) 200px, 200px" 
+                    alt="Team-Avatar">
+            </div>
             <h2>${name}</h2>
             <p>${job}</p>
       `;
